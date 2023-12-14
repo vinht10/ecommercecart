@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <!--css file-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--top-->
+    <header>
+        <div class="container container-header">
+            <div class="header-left">
+                <div class="logo">VINS</div>
+            </div>
+            <div class="header-right">
+                <div class="header-cart" id="cartiddisplaybtn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="numberofcart" id="numberofcartid">0</div>
+                </div>
+                <div class="header-login" id="header-loginId">
+                    Login
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--cart section-->
+    <section id="cartid" class="card-hidden">
+        <div class="cart-container">
+            <div class="cart-close">
+                <button class="btn" id="cart-close-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <p class="cart-text">Cart</p>
+            </div>
+            <div class="cart-body" id="cart-product-bodyID">
+            </div>
+            <div id="productTotalQty-TotalPrice">
+                <div class="cart-total">
+                    <div class="cart-total-payment">
+                        Total : <span id="cart-total-paymentid">100</span>
+                    </div>
+                    <div class="cart-total-qty">
+                        Qty : <span id="cart-qty-qtyid">5</span>
+                    </div>
+                </div>
+                <div class="cart-payment-btn">
+                    Payment
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--product section-->
+    <main>
+        <div class="container container-main">
+
+            <!--list of product-->
+            <div class="product-container" id="product-list">
+                <!--render product-->
+            </div>
+
+        </div>
+
+        <div class="hidden" id="displayIframe">
+            <iframe src="" id="login-sign-container" class="">
+                <!--login and signup page-->
+            </iframe>
+        </div>
+        
+
+    </main>
+
+
+
+    <!--js file-->
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
